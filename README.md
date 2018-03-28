@@ -10,7 +10,7 @@ This is undoubtedly true, but for convenience sake we keep our main project skel
 Alright, developer. Sitting there. So smug. So confident. Thinking about how smart you must look.
 
 This is a composer driven project skeleton. So this is the general setup:
-1. Fork this repository to a new private repository.
+1. Fork this repository to a new repository.
 2. Replace instances of example.app in `composer.json` with your local dev domain.
 3. Run `composer install`
 4. Copy `local-config-sample.php` to `local-config.php` and update with your DB credentials / information. Also replace `example.app` in this file. 
