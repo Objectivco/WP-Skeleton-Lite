@@ -1,5 +1,9 @@
-# WP-Skeleton
+# WP-Skeleton-Lite
 Basic layout of a WordPress Git repository using Composer for dependency management.
+
+## Why is this lite? I'm not a weakling. 
+
+This is undoubtedly true, but for convenience sake we keep our main project skeleton as a private repository. This is so we can include stuff like license keys and secret potions that your prying eyes can't handle.
 
 ## Getting Started
 
