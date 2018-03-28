@@ -14,9 +14,9 @@ This is a composer driven project skeleton. So this is the general setup:
 
 ## Premium Plugins
 
-This includes the repositories to download WP Migrate DB Pro, Advanced Custom Fields Pro, and Gravity Forms. You'll need to add your own values to make them work.
+This project includes the composer repositories to download WP Migrate DB Pro, Advanced Custom Fields Pro, and Gravity Forms. You'll need to add your own values to make them work.
 
-You'll also need to add these to the required packages:
+You'll also need to add one or more of these to the required packages:
 ```txt
         "deliciousbrains/wp-migrate-db-pro": "*",
         "deliciousbrains/wp-migrate-db-pro-media-files": "*",
