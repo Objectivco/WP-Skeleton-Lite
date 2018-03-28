@@ -1,0 +1,21 @@
+SetEnvIfNoCase Host staging.example.com is_staging
+AuthType Basic
+AuthName "Restricted Site"
+AuthUserFile /srv/users/serverpilot/apps/staging/private/.htpasswd
+Require valid-user
+Order allow,deny
+Allow from all
+Deny from env=is_staging
+Satisfy any
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^(wp-(admin|includes).*) wp/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
